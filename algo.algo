@@ -1,0 +1,19 @@
+ALGORITHM algorithm_sentence
+VAR
+    C:= character
+    NV := Numbre_vowels; 
+    NS := Numbre_sentences;
+    NC := Numbre_characters;
+    NV , NC := 0, INTEGER
+    NS := 1 , INTEGER
+BEGIN
+    REPEAT
+    Write (type your character);
+    Read (C); 
+    NC:= NC+1;
+    if (C:= "a" or C:= "e"or C:= "i" or C:= "o" or C:= "u" or C:= "A" or C:= "E"or C:= "I" or C:= "O" or C:= "U")
+    then NV := NV +1; 
+    If (C:=" ") then NS := NS +1;
+    UNTIL (C:=".")
+    Write NV, NC, NS
+END
